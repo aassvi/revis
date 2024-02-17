@@ -253,5 +253,30 @@ function displayObjectsArray() {
  
      // Appeler la fonction pour afficher le contenu des objets et du tableau après le chargement du DOM
      displayObjectsArray();
+
+
+ var navLinks = document.querySelector('.nav-links');
+ var menuIcon = document.querySelector('.menu-icon');
+
+ menuIcon.addEventListener('click', function () {
+     navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
  });
- 
+
+ navLinks.addEventListener('mouseover', function () {
+     showNav();
+ });
+
+ navLinks.addEventListener('mouseout', function () {
+     hideNav();
+ });
+
+ function showNav() {
+     navLinks.style.display = 'flex';
+     menuIcon.classList.add('hidden');
+ }
+
+ function hideNav() {
+     navLinks.style.display = 'none';
+     menuIcon.classList.remove('hidden');
+ }
+});

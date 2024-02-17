@@ -1,0 +1,63 @@
+body {
+     margin: 0;
+     font-family: 'Helvetica', sans-serif;
+     background-color: #7ebe9b;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+ }
+ 
+ #quoteContainer {
+     background-color: rgba(255, 255, 255, 0.9);
+     border-radius: 10px;
+     padding: 40px;
+     text-align: center;
+     width: 80%;
+     max-width: 600px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+     animation: fadeIn 1s ease-in-out;
+ }
+ 
+ blockquote {
+     font-size: 28px;
+     font-weight: 400;
+     margin-bottom: 20px;
+     color: #333; /* Augmentation du contraste pour le texte de citation */
+ }
+ 
+ cite {
+     font-style: normal;
+     color: #666;
+     display: block;
+ }
+ 
+ #newQuoteBtn {
+     background-color: #37c9a4; /* Changement de couleur pour améliorer le contraste */
+     color: #fff;
+     font-size: 18px;
+     margin-top: 40px;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ #newQuoteBtn:hover {
+     background-color: #0056b3; /* Changement de couleur pour améliorer le contraste */
+ }
+ 
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-20px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        /* Style pour les tâches terminées */
+        .completed {
+            text-decoration: line-through;
+            color: #808080;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Formulaire pour ajouter une tâche -->
+<form id="taskForm">
+    <input type="text" id="newTask" placeholder="Ajouter une tâche" required>
+    <button type="submit">Ajouter</button>
+</form>
+
+<!-- Liste de tâches -->
+<ul id="taskList"></ul>
+<section>
+     <a href="index.html">Aller à la page d'accueil</a>
+</section>
+<script src="scriptliste.js"></script>
+</body>
+</html>
