@@ -37,3 +37,15 @@ try {
 document.getElementById("clickMe").addEventListener("click", function() {
     alert("Bouton cliqué!");
 });
+/* Ajout de styles pour l'icône maison */
+.home-link {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+}
+
+.home-link img {
+    width: 30px; /* Ajustez la taille de l'icône selon vos besoins */
+    height: 30px;
+}

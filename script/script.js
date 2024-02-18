@@ -278,5 +278,7 @@ function displayObjectsArray() {
  function hideNav() {
      navLinks.style.display = 'none';
      menuIcon.classList.remove('hidden');
- }
+
+    }
 });
+
